@@ -1,5 +1,5 @@
 
-def turn
+def turn(board)
   
 greeting()
 input = input_to_index(gets.strip)
