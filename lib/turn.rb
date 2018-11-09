@@ -1,11 +1,8 @@
 
 def turn(board)
   
-greeting()
-input = input_to_index(gets.strip)
-  if valid_move?(input)
+  puts "Please enter 1-9:"
     
-  end
 end
 
 def display_board(board)
