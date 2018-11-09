@@ -2,7 +2,7 @@
 def turn
   
 greeting()
-input = gets.strip.to_i
+input = input_to_index(gets.strip)
   if valid_move?(input)
     
   end
@@ -35,5 +35,15 @@ def position_taken?(board, desired_position)
   if ["X", "O"].include?board[desired_position]
     return true
   end
+end
+
+def input_to_index(input)
+  return input.to_i - 1
+end
+
+def move(board_array, index_board, character = "X")
+  board_array[index_board] = character
+  
+  return board_array
 end
 
